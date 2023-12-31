@@ -1,4 +1,4 @@
-import {  Header, Hero, Menu, Reservation, About, Map, Footer } from "./sorting";
+import { Header, Hero, Menu, Reservation, About, Map, Footer } from "./sorting";
 
 export default function Home() {
   return (
