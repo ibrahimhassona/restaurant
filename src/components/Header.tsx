@@ -27,14 +27,18 @@ const Header = () => {
   // UseEffect for Header
   useEffect(() => {
     const handleScroll = () => {
-      setActive(window.scrollY > 100);
+      if (typeof window !== 'undefined') {
+        setActive(window.scrollY > 100);
+      }
     };
-    // Add event
-    window.addEventListener("scroll", handleScroll);
-    // remove event
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (typeof window !== 'undefined') {
+      // Add event
+      window.addEventListener("scroll", handleScroll);
+      // remove event
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (
