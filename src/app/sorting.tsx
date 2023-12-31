@@ -1,4 +1,3 @@
-import StyleGuide from "@/components/StyleGuide";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
@@ -13,7 +12,6 @@ import Footer from "@/components/Footer";
 
 
 export {
-    StyleGuide,
     Hero,
     Header,
     Nav,

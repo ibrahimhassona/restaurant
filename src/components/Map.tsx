@@ -5,9 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import { Icon } from "leaflet";
 import Image from "next/image";
 
-// Motion 
-import {motion} from 'framer-motion'
-import {FadeIn} from '../variants'
+// Motion
+import { motion } from "framer-motion";
+import { FadeIn } from "../variants";
 
 // leaflet css
 import "leaflet/dist/leaflet.css";
@@ -39,10 +39,10 @@ const Map = () => {
 
   return (
     <motion.section
-    variants={FadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.4 }}
+      variants={FadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.4 }}
       className="pt-5 xl:after:w-full xl:after:h-[180px] xl:after:bg-gradient-to-b xl:after:from-white xl:after:via-white/80 xl:after:to-white/20  xl:after:z-20 relative xl:after:absolute xl:after:top-0"
       id="contact"
     >
