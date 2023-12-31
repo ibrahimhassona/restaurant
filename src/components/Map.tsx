@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import { Icon } from "leaflet";
 import Image from "next/image";
 
+
+
 // Motion
 import { motion } from "framer-motion";
 import { FadeIn } from "../variants";
@@ -27,10 +29,15 @@ const markers: MarkerProps[] = [
     image: "/map/1.png",
   },
 ];
+
+
 const customIcon = new Icon({
   iconUrl: "/pin-solid.svg",
   iconSize: [40, 40],
 });
+
+
+
 const Map = () => {
   // Mobile Media => return boolean value.
   const isMobile = useMediaQuery({

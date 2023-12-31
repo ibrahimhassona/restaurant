@@ -1,4 +1,15 @@
 import { Header, Hero, Menu, Reservation, About, Map, Footer } from "./sorting";
+import { ComponentType } from "react";
+
+interface MapComponentProps {
+  // إذا كانت هناك خصائص أخرى يجب تعريفها هنا
+}
+import dynamic from "next/dynamic";
+
+
+const DynamicMap:ComponentType<MapComponentProps> = dynamic(()=>import('../components/Map'),{
+  ssr:false
+})
 
 export default function Home() {
   return (
@@ -8,7 +19,7 @@ export default function Home() {
       <Menu/>
       <Reservation/>
       <About/>
-      <Map/>
+      <DynamicMap/>
       <Footer/>
     </main>
   );

@@ -58,8 +58,8 @@ const Footer = () => {
                 {col.title}
               </h3>
               <ul className="flex flex-col justify-center items-start gap-2">
-                {col.items.map((li) => (
-                  <Link href="/">{li}</Link>
+                {col.items.map((li,i) => (
+                  <Link href="/" key={i}>{li}</Link>
                 ))}
               </ul>
             </div>
